@@ -1,0 +1,110 @@
+{
+  "name": "DevelopmentProject",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "country_id": {
+      "type": "string",
+      "description": "Reference to Country"
+    },
+    "country_name": {
+      "type": "string"
+    },
+    "continent": {
+      "type": "string"
+    },
+    "sector": {
+      "type": "string",
+      "enum": [
+        "Infrastructure",
+        "Healthcare",
+        "Education",
+        "Agriculture",
+        "Energy",
+        "Digital",
+        "Water & Sanitation",
+        "Governance",
+        "Climate",
+        "Financial Inclusion",
+        "Trade",
+        "Housing"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Proposed",
+        "Under Review",
+        "Approved",
+        "In Progress",
+        "Completed",
+        "On Hold"
+      ],
+      "default": "Proposed"
+    },
+    "budget_million_usd": {
+      "type": "number"
+    },
+    "funding_secured_million_usd": {
+      "type": "number"
+    },
+    "funding_gap_million_usd": {
+      "type": "number"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "target_completion": {
+      "type": "string",
+      "format": "date"
+    },
+    "beneficiaries": {
+      "type": "number",
+      "description": "Estimated people impacted"
+    },
+    "sdg_goals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "implementing_partners": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "impact_metrics": {
+      "type": "string"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "Standard",
+        "High",
+        "Urgent",
+        "Critical"
+      ],
+      "default": "Standard"
+    }
+  },
+  "required": [
+    "title",
+    "sector"
+  ]
+}

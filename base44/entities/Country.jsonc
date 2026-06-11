@@ -1,0 +1,163 @@
+{
+  "name": "Country",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Country name"
+    },
+    "iso_code": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2 code"
+    },
+    "continent": {
+      "type": "string",
+      "enum": [
+        "Africa",
+        "Asia",
+        "Europe",
+        "North America",
+        "South America",
+        "Oceania",
+        "Antarctica"
+      ]
+    },
+    "region": {
+      "type": "string",
+      "description": "Sub-region (e.g. West Africa, Southeast Asia)"
+    },
+    "population": {
+      "type": "number"
+    },
+    "gdp_billion_usd": {
+      "type": "number"
+    },
+    "gdp_per_capita_usd": {
+      "type": "number"
+    },
+    "hdi": {
+      "type": "number",
+      "description": "Human Development Index 0-1"
+    },
+    "hdi_rank": {
+      "type": "number"
+    },
+    "life_expectancy": {
+      "type": "number"
+    },
+    "literacy_rate": {
+      "type": "number"
+    },
+    "poverty_rate": {
+      "type": "number",
+      "description": "% below $2.15/day"
+    },
+    "gini_index": {
+      "type": "number"
+    },
+    "infrastructure_score": {
+      "type": "number",
+      "description": "0-100 infrastructure quality"
+    },
+    "digital_readiness": {
+      "type": "number",
+      "description": "0-100 digital infrastructure"
+    },
+    "ease_of_business_rank": {
+      "type": "number"
+    },
+    "corruption_index": {
+      "type": "number",
+      "description": "0-100 CPI score"
+    },
+    "political_stability": {
+      "type": "number",
+      "description": "-2.5 to 2.5 WGI score"
+    },
+    "climate_vulnerability": {
+      "type": "number",
+      "description": "0-100 ND-GAIN vulnerability"
+    },
+    "renewable_energy_pct": {
+      "type": "number"
+    },
+    "internet_penetration": {
+      "type": "number"
+    },
+    "mobile_penetration": {
+      "type": "number"
+    },
+    "health_expenditure_pct_gdp": {
+      "type": "number"
+    },
+    "education_expenditure_pct_gdp": {
+      "type": "number"
+    },
+    "unemployment_rate": {
+      "type": "number"
+    },
+    "urbanization_rate": {
+      "type": "number"
+    },
+    "co2_emissions_per_capita": {
+      "type": "number"
+    },
+    "access_to_electricity": {
+      "type": "number"
+    },
+    "access_to_clean_water": {
+      "type": "number"
+    },
+    "flag_emoji": {
+      "type": "string"
+    },
+    "capital": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "development_status": {
+      "type": "string",
+      "enum": [
+        "Developed",
+        "Developing",
+        "Least Developed",
+        "Emerging"
+      ]
+    },
+    "priority_sectors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "key_challenges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "partnership_status": {
+      "type": "string",
+      "enum": [
+        "Active Partner",
+        "In Discussion",
+        "Prospective",
+        "Not Engaged"
+      ],
+      "default": "Prospective"
+    }
+  },
+  "required": [
+    "name",
+    "iso_code",
+    "continent"
+  ]
+}

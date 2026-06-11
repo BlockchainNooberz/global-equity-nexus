@@ -1,0 +1,87 @@
+{
+  "name": "PartnershipProposal",
+  "type": "object",
+  "properties": {
+    "organization_name": {
+      "type": "string"
+    },
+    "organization_type": {
+      "type": "string",
+      "enum": [
+        "Government",
+        "UN Agency",
+        "Multilateral Bank",
+        "NGO",
+        "Private Sector",
+        "Academic",
+        "Bilateral Agency",
+        "Regional Organization"
+      ]
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string"
+    },
+    "contact_title": {
+      "type": "string"
+    },
+    "proposal_type": {
+      "type": "string",
+      "enum": [
+        "Investment",
+        "Technical Assistance",
+        "Data Sharing",
+        "Platform Integration",
+        "Joint Program",
+        "Acquisition/Buyout",
+        "Licensing"
+      ]
+    },
+    "target_regions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "proposed_budget_million_usd": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Submitted",
+        "Under Review",
+        "In Negotiation",
+        "Approved",
+        "Rejected",
+        "Withdrawn"
+      ],
+      "default": "Submitted"
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "Standard",
+        "High",
+        "Urgent"
+      ],
+      "default": "Standard"
+    },
+    "sdg_alignment": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "organization_name",
+    "organization_type",
+    "proposal_type"
+  ]
+}
