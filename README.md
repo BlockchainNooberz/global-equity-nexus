@@ -1,39 +1,37 @@
-**Welcome to your Base44 project** 
+# Global Equity Nexus 🌐📊
 
-**About**
+> Institutional-grade global equity research, screening, and portfolio intelligence platform
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+Global Equity Nexus is a sophisticated equity analysis platform built for investors, fund managers, and financial analysts. It aggregates global market data, applies AI-driven screening, and surfaces high-conviction investment opportunities across international markets.
 
-This project contains everything you need to run your app locally.
+## Features
+- 🔎 **Multi-Factor Stock Screener** — filter equities by valuation, growth, momentum, quality, and ESG factors across 50+ markets
+- 📉 **Macro Intelligence Dashboard** — track interest rates, currency flows, and geopolitical risk by region
+- 🤖 **AI Equity Research Assistant** — generate company summaries, compare comps, and build thesis frameworks
+- 📁 **Portfolio Construction Tools** — optimize allocations for risk-adjusted returns across global asset classes
+- 📡 **Real-Time Alerts** — monitor earnings, news events, and technical breakouts on your watchlist
 
-**Edit the code in your local development environment**
+## Tech Stack
+- **Frontend:** React / Base44 UI
+- **Backend:** Base44 serverless functions
+- **Data:** Financial Modeling Prep, Alpha Vantage, World Bank APIs
+- **AI:** LLM-powered research synthesis and opportunity scoring
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+## Target Users
+- Hedge fund analysts
+- Family office investment teams
+- Retail investors seeking institutional-quality tools
+- Emerging market specialists
 
-**Prerequisites:** 
-
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
-
+## Getting Started
+```bash
+git clone https://github.com/BlockchainNooberz/global-equity-nexus
+cd global-equity-nexus
+npm install
+npm run dev
 ```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
-
-Run the app: `npm run dev`
-
-**Publish your changes**
-
-Open [Base44.com](http://Base44.com) and click on Publish.
-
-**Docs & Support**
-
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
-
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+## About
+Built by **Andrew Elston** — financial technology developer and quantitative researcher.
+- GitHub: [BlockchainNooberz](https://github.com/BlockchainNooberz)
+- Contact: andrewelston177@gmail.com
