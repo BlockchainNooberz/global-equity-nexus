@@ -39,3 +39,4 @@ Thumbs.db
 *.pkl
 *.parquet
 data/raw/
+base44/.app.jsonc
